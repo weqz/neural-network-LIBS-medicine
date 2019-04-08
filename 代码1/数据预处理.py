@@ -106,7 +106,7 @@ def pca(data, n_components):
 if __name__ == "__main__":
 
     data = readOneFolder("DH", "QH", 1)
-    data_re = pca(data=data, n_components=0.95)
+    data_re = pca(data=data, n_components=0.999)
 
     np.savetxt("data_pre.txt", data_re)
 
